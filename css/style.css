@@ -7,6 +7,29 @@
 
     /*兼容微信内核 按钮样式*/
   input[type=button], input[type=submit], input[type=file], button { cursor: pointer; -webkit-appearance: none; }
+
+
+input{
+            text-indent: 0;
+            background: transparent;
+            border: 0 none;
+            resize:none; 
+            outline:none;  /*清除选中效果的默认蓝色边框 */
+            -webkit-appearance:none;  /*清除浏览器默认的样式 */
+            line-height: normal;   /*光标问题*/ 
+        }
+        input::-webkit-input-placeholder { /* WebKit browsers */
+            line-height: 0.44rem;  /* placeholder*/
+        }
+        input:focus {
+            color: #8b8791;
+        }
+
+
+
+
+
+
 header{
 	background-color: #d01922;
 	border-bottom: 0.15rem solid #f4f4f4;
