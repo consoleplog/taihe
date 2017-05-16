@@ -10,13 +10,13 @@
 
 
 input{
- /*           text-indent: 0;
+            text-indent: 0;
             background: transparent;
             border: 0 none;
             resize:none; 
-            outline:none; */ /*清除选中效果的默认蓝色边框 */
+            outline:none;  /*清除选中效果的默认蓝色边框 */
             -webkit-appearance:none;  /*清除浏览器默认的样式 */
-           /* line-height: normal;*/   /*光标问题*/ 
+            line-height: normal;   /*光标问题*/ 
         }
 
         input:focus {
@@ -418,6 +418,7 @@ header h1{
 .form li input[type="text"]{
 	font-size: 0.24rem;
 	color:#2e2e2e;
+	line-height: 0.24rem;
 }
 
 .info_text1{
