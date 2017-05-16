@@ -16,7 +16,7 @@ input{
             resize:none; 
             outline:none;  /*清除选中效果的默认蓝色边框 */
             -webkit-appearance:none;  /*清除浏览器默认的样式 */
-            line-height: normal;   /*光标问题*/ 
+            /*line-height: normal; */  /*光标问题*/ 
         }
 
         input:focus {
@@ -24,7 +24,7 @@ input{
         }
 
         input::-webkit-input-placeholder { /* WebKit browsers */
-            line-height: 0.24rem;   //placeholder
+            /*line-height: 0.24rem;*/   /*//placeholder*/
         }
 
 
