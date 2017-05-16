@@ -23,7 +23,9 @@ input{
             color: #8b8791;
         }
 
-
+        input::-webkit-input-placeholder { /* WebKit browsers */
+            line-height: 0.24rem;   //placeholder
+        }
 
 
 
