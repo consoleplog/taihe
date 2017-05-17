@@ -58,7 +58,7 @@ $(document).ready(function(){
 			var box_h=$('.tanchu2').height();
 			var set_bottom=(height_-box_h)/2;
 			var set_left=(width_-box_w)/2
-			$('.tanchu2').css("top",set_bottom);
+			$('.tanchu2').css("bottom",set_bottom);
 			$('.tanchu2').css('left',set_left);
 
 	})
