@@ -7,6 +7,8 @@ $(document).ready(function(){
 // 弹出层
 	$('.lx').click(function(e){
 			e.preventDefault();
+
+
 			// 获取网页高度
 			var h=document.body.scrollHeight;
 			$('.zhezhao').css('height',h)
@@ -23,11 +25,13 @@ $(document).ready(function(){
 			var box_w=$('.tanchu').width();
 			var box_h=$('.tanchu').height();
 			
-			var set_top=(height_-box_h)/2+scrollTop-70;
+			var set_top=(height_-box_h)/2+scrollTop;
 			var set_left=(width_-box_w)/2
 			$('.tanchu').css("top",set_top);
 			$('.tanchu').css('left',set_left);
+
 			
+
 
 	})
 
@@ -52,7 +56,7 @@ $(document).ready(function(){
 			//获取 定位 宽高；
 			var box_w=$('.tanchu2').width();
 			var box_h=$('.tanchu2').height();
-			var set_top=(height_-box_h)/2+scrollTop-70;
+			var set_top=(height_-box_h)/2+scrollTop;
 			var set_left=(width_-box_w)/2
 			$('.tanchu2').css("top",set_top);
 			$('.tanchu2').css('left',set_left);

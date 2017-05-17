@@ -2,34 +2,11 @@
 
  *{margin:0;padding:0;box-sizing: border-box;}
   a{text-decoration: none;}
-  body,input{font-family:'方正兰亭黑_GBK';font-size: 0.14rem;}
+  body,input{font-family:'方正兰亭黑_GBK';font-size: 0.14rem;background-color: #fff;}
   li{list-style: none;}
 
     /*兼容微信内核 按钮样式*/
   input[type=button], input[type=submit], input[type=file], button { cursor: pointer; -webkit-appearance: none; }
-
-
-input{
-            text-indent: 0;
-            background: transparent;
-            border: 0 none;
-            resize:none; 
-            outline:none;  /*清除选中效果的默认蓝色边框 */
-            -webkit-appearance:none;  /*清除浏览器默认的样式 */
-            line-height: normal;   /*光标问题*/ 
-        }
-
-        input:focus {
-            color: #8b8791;
-        }
-
-        input::-webkit-input-placeholder { /* WebKit browsers */
-            /*line-height: 0.24rem;*/   /*//placeholder*/
-        }
-
-
-
-
 header{
 	background-color: #d01922;
 	border-bottom: 0.15rem solid #f4f4f4;
@@ -81,7 +58,7 @@ header h1{
 	float:right;
 }
 .card span{
-	font-family: "冬青黑体简体中文"；
+	font-family: "冬青黑体简体中文";
 	font-size:0.18rem;
 	color:#757474;
 }
@@ -94,6 +71,7 @@ header h1{
 
 
 .li{	
+	height: 1.9rem;
 	padding:0.25rem 0;
 	padding-left: 0.2rem;
 	border-bottom: 1px solid #e8e8e8;
@@ -121,7 +99,7 @@ header h1{
 		color:#fff;
 		width: 1.92rem;
 		height: 0.38rem;
-		background-image: url(../images/透明背景.png);
+		background-image: url(../images/background.png);
 		background-repeat: no-repeat;
 		-webkit-background-size: cover;
 		background-size: cover;
@@ -256,6 +234,8 @@ header h1{
 	font-size: 0.21rem;
 	padding-bottom: 0.12rem;
 	line-height: 0.21rem;
+	color:#000;
+	margin:0;
 
 }
 .p2{
@@ -263,6 +243,8 @@ header h1{
 	font-size: 0.21rem;
 	line-height: 0.21rem;
 	padding-bottom: 0.24rem;
+	color:#000;
+	margin:0;
 }
 .img_p{
 	width: 1.38rem;
@@ -284,7 +266,7 @@ header h1{
 	width: 3.2rem;
 	height: 0.76rem;
 	display: inline-block;
-	background-image: url("../images/1联系客服.png");
+	background-image: url("../images/lianxikefu.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	text-align: center;
@@ -297,7 +279,7 @@ header h1{
 	height: 0.76rem;
 	display: inline-block;
 	float: right;
-	background-image: url("../images/2申请.png");
+	background-image: url("../images/applyjoin.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	text-align: center;
@@ -320,7 +302,7 @@ header h1{
 
 
 .zhezhao{
-	position:absolute; 
+	position:fixed; 
     left:0; 
     top:0; 
 	width: 6.4rem;
@@ -335,7 +317,7 @@ header h1{
 	bottom:-500px;
 	left: 0.67rem;
 	width: 5.04rem;
-	height: 5.11rem;
+	height: 5.6rem;
 	background-color: #fff;
 	z-index: 101;
 	border-radius: 6px;
@@ -365,33 +347,38 @@ header h1{
 	display: inline-block;
 	float:right;
 }
-.form{
-	padding: 0 0.28rem;
+form{
+	padding: 0 0.2rem;
 }
-.form input{
-	font-size: 0.24rem;
-}
-.form li{
-	border-bottom: 1px solid #d1d1d1;
-	font-size: 0.24rem;
-	color:#b7b7b7;
-	line-height: 0.68rem;
-}
+
 .name{
+
 	font-size: 0.24rem;
 	color:#b7b7b7;
-	line-height: 0.86rem;
+	padding:0.14px 0.15px;
 }
 
 #yz_btn{
+	float:left;
 	border:none;
 	background-color: #fff;
-	line-height: 0.38rem;
+	line-height: 0.37rem;
 	font-size: 0.2rem;
 	border-left: 1px solid #d1d1d1;
-	text-indent: 0.2rem;
 	color:#f8413d;
-
+	width: 30%;
+	padding-left: 0.1rem;
+}
+#yz_btn1{
+	float:left;
+	border:none;
+	background-color: #fff;
+	line-height: 0.37rem;
+	font-size: 0.2rem;
+	border-left: 1px solid #d1d1d1;
+	color:#f8413d;
+	width: 30%;
+	padding-left: 0.1rem;
 }
 #sub{
 	border:none;
@@ -400,7 +387,7 @@ header h1{
 	height: 0.55rem;
 	background-color: #e71620;
 	text-align: center;
-	margin-left: 0.3rem;
+	margin-left: 0.4rem;
 	margin-top: 0.54rem;
 	color:#fff;
 }
@@ -410,17 +397,19 @@ header h1{
 	bottom:-500px;
 	left: 0.74rem;
 	width: 5.06rem;
-	height: 6.33rem;
+	height: 6.5rem;
 	background-color: #fff;
 	border-radius: 0.16rem;
 	z-index: 102;
 	display: none;
 
 }
-.form li input[type="text"]{
+form  input[type="text"]{
 	font-size: 0.24rem;
 	color:#2e2e2e;
-	line-height: 0.44rem;
+}
+.mui-input-row{
+	border-bottom: 1px solid #dadada;
 }
 
 .info_text1{
@@ -452,7 +441,7 @@ header h1{
 	height: 0.55rem;
 	background-color: #f8413d;
 	text-align: center;
-	margin:0.54rem 0 0.4rem 0.3rem;
+	margin:0.54rem 0 0.4rem 0.45rem;
 	font-family: "方正兰亭准黑_GBK";
 	font-size: 0.24rem;
 	color:#fff;
