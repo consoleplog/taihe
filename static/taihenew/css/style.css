@@ -305,17 +305,15 @@ header h1{
 	position:fixed; 
     left:0; 
     top:0; 
-	width: 6.4rem;
-	height:197%;
+	width: 100%;
+	height:100%;
 	background-color: #000; 
 	opacity: 0.5;
     z-index: 100;
     display: none; 
 }
 .tanchu{
-	position: absolute;
-	bottom:-500px;
-	left: 0.67rem;
+	position: fixed;
 	width: 5.04rem;
 	height: 5.6rem;
 	background-color: #fff;
@@ -393,7 +391,7 @@ form{
 }
 
 .tanchu2{
-	position: absolute;
+	position: fixed;
 	bottom:-500px;
 	left: 0.74rem;
 	width: 5.06rem;

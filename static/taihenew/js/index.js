@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 			// 获取网页高度
 			var h=document.body.scrollHeight;
-			$('.zhezhao').css('height',h)
+			// $('.zhezhao').css('height',h)
 			// 获取网页被圈去的高度
 			var scrollTop=document.body.scrollTop;
 			// 获取屏幕可用工作高度，和宽度
@@ -25,9 +25,9 @@ $(document).ready(function(){
 			var box_w=$('.tanchu').width();
 			var box_h=$('.tanchu').height();
 			
-			var set_top=(height_-box_h)/2+scrollTop;
+			var set_bottom=(height_-box_h)/2
 			var set_left=(width_-box_w)/2
-			$('.tanchu').css("top",set_top);
+			$('.tanchu').css("bottom",set_bottom);
 			$('.tanchu').css('left',set_left);
 
 			
@@ -44,7 +44,7 @@ $(document).ready(function(){
 	$('.shenqing').click(function(e){
 			e.preventDefault();
 			var h=document.body.scrollHeight;
-			$('.zhezhao').css('height',h)
+			// $('.zhezhao').css('height',h)
 			// 获取网页被圈去的高度
 			var scrollTop=document.body.scrollTop;
 			// 获取屏幕可用工作高度，和宽度
@@ -56,9 +56,9 @@ $(document).ready(function(){
 			//获取 定位 宽高；
 			var box_w=$('.tanchu2').width();
 			var box_h=$('.tanchu2').height();
-			var set_top=(height_-box_h)/2+scrollTop;
+			var set_bottom=(height_-box_h)/2;
 			var set_left=(width_-box_w)/2
-			$('.tanchu2').css("top",set_top);
+			$('.tanchu2').css("top",set_bottom);
 			$('.tanchu2').css('left',set_left);
 
 	})
