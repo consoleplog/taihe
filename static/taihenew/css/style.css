@@ -5,8 +5,23 @@
   body,input{font-family:'方正兰亭黑_GBK';font-size: 0.14rem;background-color: #fff;}
   li{list-style: none;}
 
+	
     /*兼容微信内核 按钮样式*/
-  input[type=button], input[type=submit], input[type=file], button { cursor: pointer; -webkit-appearance: none; }
+  /*input[type=button], input[type=submit], input[type=file], button { cursor: pointer; -webkit-appearance: none; }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 header{
 	background-color: #d01922;
 	border-bottom: 0.15rem solid #f4f4f4;
@@ -18,6 +33,11 @@ header h1{
 	padding:0.3rem 0;
 
 }
+
+
+
+
+
 .arrow_top{
 	float:left;
 	display: inline-block;
@@ -298,35 +318,59 @@ header h1{
 
 
 
-
-
-
-.zhezhao{
-	position:fixed; 
-    left:0; 
-    top:0; 
-	width: 100%;
-	height:100%;
-	background-color: #000; 
-	opacity: 0.5;
-    z-index: 100;
-    display: none; 
-}
-.tanchu{
-	position: fixed;
-	width: 5.04rem;
-	height: 5.6rem;
-	background-color: #fff;
-	z-index: 101;
-	border-radius: 6px;
+.tanchu1 ,.tanchu2{
 	display: none;
 }
+
+
+
+.weui-cells:before{
+	border:none;
+}
+
+.weui-cells .cc{
+	border-bottom: 1px solid #d1d1d1;
+}
+.weui-dialog__bd{
+	padding-left: 0;
+	padding-right:0;
+
+
+}
+.weui-dialog__bd:first-child{
+	padding-top: 0;
+}
+
+.weui-cell__hd{
+	border:none;
+}
+.weui-cells_form .weui-label{
+	font-size: 0.24rem;
+	text-align: left;
+	width: 0.8rem;
+	color:#b7b7b7;
+}
+
+.weui-cells_form .weui-input{
+	font-size: 0.24rem;
+	color:#2e2e2e;
+}
+.weui-cells_form .weui-cell__ft .weui-vcode-btn{
+	font-size: 0.2rem;
+	color:#f8413d;
+	
+}
+.weui-dialog{
+	border-radius: 10px;
+}
+
+
 .info_text{
 	display: inline-block;
 	margin:0 auto;
-	width: 5.04rem;
-	height: 0.8rem;
-	line-height: 0.8rem;
+	width: 5.08rem;
+	height: 1rem;
+	line-height: 1rem;
 	text-align: center;
 	font-size: 0.28rem;
 	color:#454545;
@@ -353,11 +397,15 @@ form{
 
 	font-size: 0.24rem;
 	color:#b7b7b7;
-	padding:0.14px 0.15px;
+	
+
 }
 
+
+
 #yz_btn{
-	float:left;
+	display: inline-block;
+	float:right;
 	border:none;
 	background-color: #fff;
 	line-height: 0.37rem;
@@ -385,37 +433,21 @@ form{
 	height: 0.55rem;
 	background-color: #e71620;
 	text-align: center;
-	margin-left: 0.4rem;
+	
 	margin-top: 0.54rem;
 	color:#fff;
 }
 
-.tanchu2{
-	position: fixed;
-	bottom:-500px;
-	left: 0.74rem;
-	width: 5.06rem;
-	height: 6.5rem;
-	background-color: #fff;
-	border-radius: 0.16rem;
-	z-index: 102;
-	display: none;
 
-}
-form  input[type="text"]{
-	font-size: 0.24rem;
-	color:#2e2e2e;
-}
-.mui-input-row{
-	border-bottom: 1px solid #dadada;
-}
+
+
 
 .info_text1{
 	display: inline-block;
 	background-image: url(../images/18.png);
 	background-size: cover;
 	background-repeat:no-repeat;
-	width: 5.07rem;
+	width: 5.2rem;
 	height: 1.75rem;
 	color:#fff;
 	font-size: 0.45rem;
@@ -439,7 +471,7 @@ form  input[type="text"]{
 	height: 0.55rem;
 	background-color: #f8413d;
 	text-align: center;
-	margin:0.54rem 0 0.4rem 0.45rem;
+	margin-top: 0.4rem;
 	font-family: "方正兰亭准黑_GBK";
 	font-size: 0.24rem;
 	color:#fff;
