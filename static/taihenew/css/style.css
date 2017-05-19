@@ -327,7 +327,9 @@ header h1{
 .weui-cells:before{
 	border:none;
 }
-
+.weui-cells:after{
+	border:none;
+}
 .weui-cells .cc{
 	border-bottom: 1px solid #d1d1d1;
 }
