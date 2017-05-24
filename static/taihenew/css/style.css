@@ -479,3 +479,9 @@ form{
 	color:#fff;
 }
 
+.fly{
+	display: none;
+	position: fixed;
+	top:0;
+	left:0;
+}

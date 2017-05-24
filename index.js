@@ -63,6 +63,17 @@ $(document).ready(function(){
         saveUserinfo();
 	});
 
+
+    $(window).scroll(function(){
+        var he=$('.fly').offset().top;
+      if(he>0){
+        $('.fly').css('display','block');
+      };
+      if(he==0){
+        $('.fly').css('display','none');
+      }
+      console.log(he)
+    });
 // // 首页跳转列表
 // 	$('.go_').click(function(){
 // 		location.href="02.html"

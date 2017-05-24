@@ -39,5 +39,20 @@ $(document).ready(function(){
 		history.back();
 	})
 
+	
+
+	
+	 
+
+	$(window).scroll(function(){
+		var he=$('.fly').offset().top;
+	  if(he>0){
+	  	$('.fly').css('display','block');
+	  };
+	  if(he==0){
+	  	$('.fly').css('display','none');
+	  }
+	  console.log(he)
+	});
 
 })
